@@ -11,13 +11,14 @@ import 'state.dart';
 void main() {
   /// provider version
 
+  /*
   runApp(
     provider.ChangeNotifierProvider<AppState>(
       create: (_) => AppState(),
       child: const Home(),
     ),
   );
-
+*/
   runApp(
     const riverpod.ProviderScope(child: HomeRiverpod()),
   );
